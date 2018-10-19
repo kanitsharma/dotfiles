@@ -422,6 +422,6 @@ mode "$mode_gaps_outer" {
 # Customs
 
 # start a terminal
-bindsym $mod+Return exec terminator
+bindsym $mod+Return exec xterm
 
 bindsym $mod+b exec firefox-developer-edition
