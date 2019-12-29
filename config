@@ -279,13 +279,13 @@ exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id start_conky_maia
+exec --no-startup-id xset -b
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xautolock -time 30 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
-exec --no-startup-id i3-msg 'workspace 1; exec firefox-developer-edition'
-exec --no-startup-id i3-msg 'workspace 2; exec xterm'
+exec --no-startup-id i3-msg 'workspace 1; exec terminator'
 
 
 # Color palette used for the terminal ( ~/.Xresources file )
@@ -422,6 +422,6 @@ mode "$mode_gaps_outer" {
 # Customs
 
 # start a terminal
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec terminator
 
 bindsym $mod+b exec firefox-developer-edition
